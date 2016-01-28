@@ -1,0 +1,4 @@
+﻿  UVa10305.cpp
+d:\programming\uva-practice\uva-10305\uva10305.cpp(53): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(240): note: see declaration of 'freopen'
+  UVa-10305.vcxproj -> D:\Programming\UVa-Practice\Debug\UVa-10305.exe

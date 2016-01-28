@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="UVa-Practice" Database="">
+  <Project Name="UVa-10901" Path="UVa-10901/UVa-10901.project" Active="No"/>
+  <Project Name="UVa-10305" Path="UVa-10305/UVa-10305.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="UVa-10901" ConfigName="Debug"/>
+      <Project Name="UVa-10305" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="UVa-10901" ConfigName="Release"/>
+      <Project Name="UVa-10305" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
