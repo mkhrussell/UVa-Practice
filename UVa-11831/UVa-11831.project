@@ -93,4 +93,10 @@
   <VirtualDirectory Name="src">
     <File Name="UVa11831.cpp"/>
   </VirtualDirectory>
+  <VirtualDirectory Name="res">
+    <File Name="11831.pdf"/>
+    <File Name="sample-input.txt"/>
+    <File Name="output.txt"/>
+    <File Name="sample-output.txt"/>
+  </VirtualDirectory>
 </CodeLite_Project>

@@ -18,8 +18,8 @@
   <Project Name="UVa-11034" Path="UVa-11034/UVa-11034.project" Active="No"/>
   <Project Name="UVa-11172" Path="UVa-11172/UVa-11172.project" Active="No"/>
   <Project Name="UVa-11498" Path="UVa-11498/UVa-11498.project" Active="No"/>
-  <Project Name="UVa-11727" Path="UVa-11727/UVa-11727.project" Active="Yes"/>
-  <Project Name="UVa-11831" Path="UVa-11831/UVa-11831.project" Active="No"/>
+  <Project Name="UVa-11727" Path="UVa-11727/UVa-11727.project" Active="No"/>
+  <Project Name="UVa-11831" Path="UVa-11831/UVa-11831.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="UVa-10901" ConfigName="Debug"/>

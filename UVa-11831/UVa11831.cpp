@@ -66,8 +66,8 @@ void goToStart()
 
 int main(int argc, char **argv)
 {
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
+	//freopen("../sample-input.txt", "r", stdin);
+	//freopen("../output.txt", "w", stdout);
 
 	// "D" >> "turn 90 degrees to the right"
 	// "E" >> "turn 90 degrees to the left"
