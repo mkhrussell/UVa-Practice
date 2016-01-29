@@ -1,12 +1,12 @@
 #include <iostream>
-//#include <cstdio>
+#include <cstdio>
 
 using namespace std;
 
 int main(int argc, char**argv)
 {
-	//freopen("input.txt", "r", stdin);
-	//freopen("redirect.txt", "w", stdout);
+	//freopen("../sample-input.txt", "r", stdin);
+	//freopen("../output.txt", "w", stdout);
 
 	for (int nCase = 1; ; nCase++)
 	{

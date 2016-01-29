@@ -95,7 +95,7 @@
   </VirtualDirectory>
   <VirtualDirectory Name="res">
     <File Name="573.pdf"/>
-    <File Name="input.txt"/>
-    <File Name="redirect.txt"/>
+    <File Name="output.txt"/>
+    <File Name="sample-input.txt"/>
   </VirtualDirectory>
 </CodeLite_Project>
