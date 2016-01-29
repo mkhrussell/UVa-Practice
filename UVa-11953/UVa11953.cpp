@@ -133,8 +133,8 @@ bool isShipAlive(int r, int c)
 
 int main(int argc, char **argv)
 {
-	//freopen("input.txt", "r", stdin);
-	//freopen("output.txt", "w", stdout);
+	//freopen("../sample-input.txt", "r", stdin);
+	//freopen("../output.txt", "w", stdout);
 	
 	cin >> T;
 	for (int nCase = 1; nCase <= T; nCase++)
