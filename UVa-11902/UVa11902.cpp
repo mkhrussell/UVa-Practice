@@ -61,8 +61,8 @@ void dfs_visit(int u_root)
 
 int main(int argc, char **argv)
 {
-    //freopen("../res/input.txt", "r", stdin);
-    //freopen("../res/output.txt", "w", stdout);
+    //freopen("../sample-input.txt", "r", stdin);
+    //freopen("../output.txt", "w", stdout);
     
     cin >> T;
     for(int nCase = 1; nCase <= T; nCase++)
@@ -105,7 +105,7 @@ int main(int argc, char **argv)
             {
                 for(int v = 0; v < N; v++)
                 {                
-                    if(reached[v] == WHITE) // check for unvisited. unvisited means not reachable or dominated
+                    if(reached[v] == WHITE) // check for unvisited. unvisited means not reachable or not dominated
                         graph_out[u][v] = 'Y';
                     else
                         graph_out[u][v] = 'N';

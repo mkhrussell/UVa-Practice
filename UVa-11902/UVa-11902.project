@@ -96,5 +96,6 @@
   <VirtualDirectory Name="res">
     <File Name="sample-input.txt"/>
     <File Name="sample-output.txt"/>
+    <File Name="output.txt"/>
   </VirtualDirectory>
 </CodeLite_Project>
