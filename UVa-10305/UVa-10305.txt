@@ -1,1 +1,1 @@
-./Debug/UVa10305.cpp.o   
+./Debug/UVa10305.cpp.o
