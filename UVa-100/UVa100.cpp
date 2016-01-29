@@ -39,7 +39,8 @@ int findMaxCycle(int i, int j)
 
 int main(int argc, char **argv)
 {
-	//freopen("../res/input02.txt", "r", stdin);
+	//freopen("../res/sample-input2.txt", "r", stdin);
+    //freopen("../res/output.txt", "w", stdout);
     int i, j;
 	while(scanf("%d %d", &i, &j) != EOF)
 	{

@@ -56,8 +56,8 @@ bool bfs(int start)
 
 int main(int argc, char **argv)
 {
-	//freopen("input2.txt", "r", stdin);
-	//freopen("output.txt", "w", stdout);
+	//freopen("../sample-input2.txt", "r", stdin);
+	//freopen("../output.txt", "w", stdout);
 
 	while (true)
 	{

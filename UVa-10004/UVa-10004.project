@@ -94,9 +94,10 @@
     <File Name="UVa10004.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="res">
-    <File Name="input.txt"/>
-    <File Name="input2.txt"/>
     <File Name="output.txt"/>
-    <File Name="result-output.txt"/>
+    <File Name="sample-input.txt"/>
+    <File Name="sample-output.txt"/>
+    <File Name="sample-input2.txt"/>
+    <File Name="sample-output2.txt"/>
   </VirtualDirectory>
 </CodeLite_Project>

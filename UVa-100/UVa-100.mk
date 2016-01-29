@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=UVa-100
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/kamrul/Development/UVA-Practice"
-ProjectPath            := "/home/kamrul/Development/UVA-Practice/UVa-100"
+WorkspacePath          := "/home/kamrul/Development/UVa-Practice"
+ProjectPath            := "/home/kamrul/Development/UVa-Practice/UVa-100"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Mohammad Kamrul Hasan
-Date                   :=08/07/15
+Date                   :=29/01/16
 CodeLitePath           :="/home/kamrul/.codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -69,7 +69,7 @@ Objects=$(Objects0)
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
@@ -77,6 +77,10 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
+
+MakeIntermediateDirs:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
 
 $(IntermediateDirectory)/.d:
 	@test -d ./Debug || $(MakeDirCommand) ./Debug
@@ -88,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/UVa100.cpp$(ObjectSuffix): UVa100.cpp $(IntermediateDirectory)/UVa100.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVA-Practice/UVa-100/UVa100.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa100.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVa-Practice/UVa-100/UVa100.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa100.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/UVa100.cpp$(DependSuffix): UVa100.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UVa100.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UVa100.cpp$(DependSuffix) -MM "UVa100.cpp"
 
