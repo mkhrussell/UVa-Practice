@@ -1,31 +1,34 @@
 #include <iostream>
+#include <list>
+
+//#include <cstdio>
 
 using namespace std;
 
+list <int> salaries;
 int T;
-int numCase;
 
 int main(int argc, char **argv)
 {
-    //freopen("F:\\Programming\\UVA-Practice\\UVa-11727\\input.txt", "r", stdin);
+	//freopen("../sample-input.txt", "r", stdin);
+	//freopen("../output.txt", "w", stdout);
 
-    cin >> T;
-    for (numCase = 1; numCase <= T; numCase++)
-    {
-        int salOne, salTwo, salThree, salSurv;
-        cin >> salOne >> salTwo >> salThree;
+	cin >> T;
+	for (int nCase = 1; nCase <= T; nCase++)
+	{
+		salaries.clear();
+		int a, b, c;
+		cin >> a >> b >> c;
 
-        if (salOne >= salTwo)
-            salSurv = salOne;
-        else
-            salSurv = salTwo;
+		salaries.push_back(a);
+		salaries.push_back(b);
+		salaries.push_back(c);
 
-        if (salSurv > salThree)
-            salSurv = salThree;
-        
+		salaries.sort();
+		salaries.pop_front();
 
-        cout << "Case " << numCase << ": " << salSurv << endl;
-    }
+		cout << "Case " << nCase << ": " << salaries.front() << endl;
+	}
 
-    return 0;
+	return 0;
 }
