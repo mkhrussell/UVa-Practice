@@ -73,9 +73,11 @@ int dfs_main()
 	return 0;
 }
 
+/*
 int main(int argc, char**argv)
 {
 	dfs_main();
 
 	return 0;
 }
+*/
