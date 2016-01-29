@@ -93,4 +93,9 @@
   <VirtualDirectory Name="src">
     <File Name="UVa352.cpp"/>
   </VirtualDirectory>
+  <VirtualDirectory Name="res">
+    <File Name="sample-input.txt"/>
+    <File Name="sample-output.txt"/>
+    <File Name="output.txt"/>
+  </VirtualDirectory>
 </CodeLite_Project>
