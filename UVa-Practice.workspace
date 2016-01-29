@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="UVa-Practice" Database="">
   <Project Name="UVa-10901" Path="UVa-10901/UVa-10901.project" Active="No"/>
-  <Project Name="UVa-10305" Path="UVa-10305/UVa-10305.project" Active="Yes"/>
+  <Project Name="UVa-10305" Path="UVa-10305/UVa-10305.project" Active="No"/>
   <Project Name="Hello" Path="Hello/Hello.project"/>
   <Project Name="UVa-247" Path="UVa-247/UVa-247.project"/>
   <Project Name="UVa-315" Path="UVa-315/UVa-315.project"/>
@@ -11,7 +11,7 @@
   <Project Name="UVa-11902" Path="UVa-11902/UVa-11902.project"/>
   <Project Name="UVa-11953" Path="UVa-11953/UVa-11953.project"/>
   <Project Name="UVa-100" Path="UVa-100/UVa-100.project" Active="No"/>
-  <Project Name="UVa-260" Path="UVa-260/Uva-260.project" Active="No"/>
+  <Project Name="UVa-260" Path="UVa-260/Uva-260.project" Active="Yes"/>
   <Project Name="UVa-336" Path="UVa-336/Uva-336.project" Active="No"/>
   <Project Name="UVa-352" Path="UVa-352/Uva-352.project" Active="No"/>
   <Project Name="UVa-10935" Path="UVa-10935/UVa-10935.project" Active="No"/>

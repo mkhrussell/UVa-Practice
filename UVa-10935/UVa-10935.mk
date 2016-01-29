@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=UVa-10935
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/kamrul/Development/UVA-Practice"
-ProjectPath            := "/home/kamrul/Development/UVA-Practice/UVa-10935"
+WorkspacePath          := "/home/kamrul/Development/UVa-Practice"
+ProjectPath            := "/home/kamrul/Development/UVa-Practice/UVa-10935"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Mohammad Kamrul Hasan
-Date                   :=08/01/16
+Date                   :=29/01/16
 CodeLitePath           :="/home/kamrul/.codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/UVa10935.cpp$(ObjectSuffix): UVa10935.cpp $(IntermediateDirectory)/UVa10935.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVA-Practice/UVa-10935/UVa10935.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa10935.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVa-Practice/UVa-10935/UVa10935.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa10935.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/UVa10935.cpp$(DependSuffix): UVa10935.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UVa10935.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UVa10935.cpp$(DependSuffix) -MM "UVa10935.cpp"
 

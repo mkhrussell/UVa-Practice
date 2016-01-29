@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdio>
+//#include <cstdio>
 #include <cstring>
 
 using namespace std;
@@ -36,7 +36,8 @@ void dfs(int x, int y) // Recursively search path exist for B; otherwise it will
 
 int main(int argc, char **argv)
 {
-    //freopen("../res/input02.txt", "r", stdin);
+    //freopen("../res/sample-input2.txt", "r", stdin);
+    //freopen("../res/output.txt", "w", stdout);
     
     for(int nCase = 1; cin >> N && N; nCase++)
     {
