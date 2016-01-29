@@ -67,8 +67,8 @@ void dfs()
 
 int main(int argc, char**argv)
 {
-	//freopen("input.txt", "r", stdin);
-	//freopen("output.txt", "w", stdout);
+	//freopen("../sample-input.txt", "r", stdin);
+	//freopen("../output.txt", "w", stdout);
 
 	int T;
 	cin >> T;
