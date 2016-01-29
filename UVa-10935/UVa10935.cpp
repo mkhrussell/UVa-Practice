@@ -64,7 +64,9 @@ int top()
 
 int main(int argc, char **argv)
 {
-	//freopen("../res/input.txt", "r", stdin);
+	//freopen("../res/sample-input.txt", "r", stdin);
+    //freopen("../res/output.txt", "w", stdout);
+    
 	int nCase = 1;
 	int deckSize;	
 	for (;; nCase++)

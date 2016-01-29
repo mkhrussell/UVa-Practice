@@ -94,6 +94,8 @@
     <File Name="UVa10935.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="res">
-    <File Name="res/input.txt"/>
+    <File Name="res/sample-input.txt"/>
+    <File Name="res/output.txt"/>
+    <File Name="res/sample-output.txt"/>
   </VirtualDirectory>
 </CodeLite_Project>
