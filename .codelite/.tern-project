@@ -1,9 +1,11 @@
 {
- "libs": ["browser", "ecma5", "ecma6"],
+ "libs": ["browser", "ecma5", "jquery"],
  "plugins": {
   "node": {
   },
   "complete_strings": {
+  },
+  "angular": {
   }
  }
 }
