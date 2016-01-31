@@ -94,4 +94,7 @@
     <File Name="Hello.cpp"/>
     <File Name="lib.h"/>
   </VirtualDirectory>
+  <VirtualDirectory Name="res">
+    <File Name="input.txt"/>
+  </VirtualDirectory>
 </CodeLite_Project>

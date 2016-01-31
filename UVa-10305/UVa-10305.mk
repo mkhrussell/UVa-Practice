@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=UVa-10305
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/kamrul/Development/UVa-Practice"
-ProjectPath            := "/home/kamrul/Development/UVa-Practice/UVa-10305"
+WorkspacePath          := "/Users/mkhrussell/Development/UVa-Practice"
+ProjectPath            := "/Users/mkhrussell/Development/UVa-Practice/UVa-10305"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Mohammad Kamrul Hasan
-Date                   :=29/01/16
-CodeLitePath           :="/home/kamrul/.codelite"
-LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
+Date                   :=31/01/2016
+CodeLitePath           :="/Users/mkhrussell/Library/Application Support/codelite"
+LinkerName             :=/usr/bin/clang++
+SharedObjectLinkerName :=/usr/bin/clang++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -48,8 +48,8 @@ LibPath                := $(LibraryPathSwitch).
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
 AR       := /usr/bin/ar rcu
-CXX      := /usr/bin/g++
-CC       := /usr/bin/gcc
+CXX      := /usr/bin/clang++
+CC       := /usr/bin/clang
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
@@ -59,7 +59,7 @@ AS       := /usr/bin/as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/UVa10305.cpp$(ObjectSuffix) 
 
 
@@ -92,12 +92,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/UVa10305.cpp$(ObjectSuffix): UVa10305.cpp $(IntermediateDirectory)/UVa10305.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVa-Practice/UVa-10305/UVa10305.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa10305.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mkhrussell/Development/UVa-Practice/UVa-10305/UVa10305.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa10305.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/UVa10305.cpp$(DependSuffix): UVa10305.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UVa10305.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UVa10305.cpp$(DependSuffix) -MM "UVa10305.cpp"
 
 $(IntermediateDirectory)/UVa10305.cpp$(PreprocessSuffix): UVa10305.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UVa10305.cpp$(PreprocessSuffix) "UVa10305.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UVa10305.cpp$(PreprocessSuffix) "UVa10305.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

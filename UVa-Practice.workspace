@@ -2,7 +2,7 @@
 <CodeLite_Workspace Name="UVa-Practice" Database="">
   <Project Name="UVa-10901" Path="UVa-10901/UVa-10901.project" Active="No"/>
   <Project Name="UVa-10305" Path="UVa-10305/UVa-10305.project" Active="No"/>
-  <Project Name="Hello" Path="Hello/Hello.project" Active="No"/>
+  <Project Name="Hello" Path="Hello/Hello.project" Active="Yes"/>
   <Project Name="UVa-247" Path="UVa-247/UVa-247.project"/>
   <Project Name="UVa-315" Path="UVa-315/UVa-315.project"/>
   <Project Name="UVa-459" Path="UVa-459/UVa-459.project" Active="No"/>
@@ -20,7 +20,7 @@
   <Project Name="UVa-11498" Path="UVa-11498/UVa-11498.project" Active="No"/>
   <Project Name="UVa-11727" Path="UVa-11727/UVa-11727.project" Active="No"/>
   <Project Name="UVa-11831" Path="UVa-11831/UVa-11831.project" Active="No"/>
-  <Project Name="DS-Practice" Path="DS-Practice/DS-Practice.project" Active="Yes"/>
+  <Project Name="DS-Practice" Path="DS-Practice/DS-Practice.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="UVa-10901" ConfigName="Debug"/>

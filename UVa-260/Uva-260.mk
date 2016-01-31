@@ -3,20 +3,20 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=Uva-260
+ProjectName            :=UVa-260
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/kamrul/Development/UVA-Practice"
-ProjectPath            := "/home/kamrul/Development/UVA-Practice/Uva-260"
+WorkspacePath          := "/Users/mkhrussell/Development/UVa-Practice"
+ProjectPath            := "/Users/mkhrussell/Development/UVa-Practice/UVa-260"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Mohammad Kamrul Hasan
-Date                   :=07/07/15
-CodeLitePath           :="/home/kamrul/.codelite"
+Date                   :=31/01/2016
+CodeLitePath           :="/Users/mkhrussell/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -32,7 +32,7 @@ Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
-ObjectsFileList        :="Uva-260.txt"
+ObjectsFileList        :="UVa-260.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
@@ -59,7 +59,7 @@ AS       := /usr/bin/as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/UVa260.cpp$(ObjectSuffix) 
 
 
@@ -69,7 +69,7 @@ Objects=$(Objects0)
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
@@ -77,6 +77,10 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
+
+MakeIntermediateDirs:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
 
 $(IntermediateDirectory)/.d:
 	@test -d ./Debug || $(MakeDirCommand) ./Debug
@@ -88,12 +92,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/UVa260.cpp$(ObjectSuffix): UVa260.cpp $(IntermediateDirectory)/UVa260.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVA-Practice/Uva-260/UVa260.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa260.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mkhrussell/Development/UVa-Practice/UVa-260/UVa260.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa260.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/UVa260.cpp$(DependSuffix): UVa260.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UVa260.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UVa260.cpp$(DependSuffix) -MM "UVa260.cpp"
 
 $(IntermediateDirectory)/UVa260.cpp$(PreprocessSuffix): UVa260.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UVa260.cpp$(PreprocessSuffix) "UVa260.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UVa260.cpp$(PreprocessSuffix) "UVa260.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

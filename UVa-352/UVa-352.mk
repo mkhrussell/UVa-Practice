@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=UVa-352
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/kamrul/Development/UVa-Practice"
-ProjectPath            := "/home/kamrul/Development/UVa-Practice/UVa-352"
+WorkspacePath          := "/Users/mkhrussell/Development/UVa-Practice"
+ProjectPath            := "/Users/mkhrussell/Development/UVa-Practice/UVa-352"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Mohammad Kamrul Hasan
-Date                   :=29/01/16
-CodeLitePath           :="/home/kamrul/.codelite"
+Date                   :=31/01/2016
+CodeLitePath           :="/Users/mkhrussell/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -59,7 +59,7 @@ AS       := /usr/bin/as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/UVa352.cpp$(ObjectSuffix) 
 
 
@@ -92,12 +92,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/UVa352.cpp$(ObjectSuffix): UVa352.cpp $(IntermediateDirectory)/UVa352.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVa-Practice/UVa-352/UVa352.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa352.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mkhrussell/Development/UVa-Practice/UVa-352/UVa352.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa352.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/UVa352.cpp$(DependSuffix): UVa352.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UVa352.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UVa352.cpp$(DependSuffix) -MM "UVa352.cpp"
 
 $(IntermediateDirectory)/UVa352.cpp$(PreprocessSuffix): UVa352.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UVa352.cpp$(PreprocessSuffix) "UVa352.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UVa352.cpp$(PreprocessSuffix) "UVa352.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

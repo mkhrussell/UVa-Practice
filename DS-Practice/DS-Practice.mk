@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=DS-Practice
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/kamrul/Development/UVa-Practice"
-ProjectPath            := "/home/kamrul/Development/UVa-Practice/DS-Practice"
+WorkspacePath          := "/Users/mkhrussell/Development/UVa-Practice"
+ProjectPath            := "/Users/mkhrussell/Development/UVa-Practice/DS-Practice"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Mohammad Kamrul Hasan
-Date                   :=29/01/16
-CodeLitePath           :="/home/kamrul/.codelite"
+Date                   :=31/01/2016
+CodeLitePath           :="/Users/mkhrussell/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -59,7 +59,7 @@ AS       := /usr/bin/as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/DFS-AjdMatrix.cpp$(ObjectSuffix) $(IntermediateDirectory)/DS-Main.cpp$(ObjectSuffix) 
 
 
@@ -92,20 +92,20 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/DFS-AjdMatrix.cpp$(ObjectSuffix): DFS-AjdMatrix.cpp $(IntermediateDirectory)/DFS-AjdMatrix.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVa-Practice/DS-Practice/DFS-AjdMatrix.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/DFS-AjdMatrix.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mkhrussell/Development/UVa-Practice/DS-Practice/DFS-AjdMatrix.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/DFS-AjdMatrix.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/DFS-AjdMatrix.cpp$(DependSuffix): DFS-AjdMatrix.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/DFS-AjdMatrix.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/DFS-AjdMatrix.cpp$(DependSuffix) -MM "DFS-AjdMatrix.cpp"
 
 $(IntermediateDirectory)/DFS-AjdMatrix.cpp$(PreprocessSuffix): DFS-AjdMatrix.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/DFS-AjdMatrix.cpp$(PreprocessSuffix) "DFS-AjdMatrix.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/DFS-AjdMatrix.cpp$(PreprocessSuffix) "DFS-AjdMatrix.cpp"
 
 $(IntermediateDirectory)/DS-Main.cpp$(ObjectSuffix): DS-Main.cpp $(IntermediateDirectory)/DS-Main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVa-Practice/DS-Practice/DS-Main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/DS-Main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mkhrussell/Development/UVa-Practice/DS-Practice/DS-Main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/DS-Main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/DS-Main.cpp$(DependSuffix): DS-Main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/DS-Main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/DS-Main.cpp$(DependSuffix) -MM "DS-Main.cpp"
 
 $(IntermediateDirectory)/DS-Main.cpp$(PreprocessSuffix): DS-Main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/DS-Main.cpp$(PreprocessSuffix) "DS-Main.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/DS-Main.cpp$(PreprocessSuffix) "DS-Main.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
