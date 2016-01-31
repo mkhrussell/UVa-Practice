@@ -145,6 +145,7 @@
     <ClCompile Include="UVa11902.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="output.txt" />
     <Text Include="sample-input.txt" />
     <Text Include="sample-output.txt" />
   </ItemGroup>

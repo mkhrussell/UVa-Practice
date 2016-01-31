@@ -145,7 +145,9 @@
     <ClCompile Include="UVa10305.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
+    <Text Include="output.txt" />
+    <Text Include="sample-input.txt" />
+    <Text Include="sample-output.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

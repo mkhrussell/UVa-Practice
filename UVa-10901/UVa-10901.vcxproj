@@ -145,9 +145,11 @@
     <ClCompile Include="UVa10901.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
-    <Text Include="input2.txt" />
-    <Text Include="redirect.txt" />
+    <Text Include="output.txt" />
+    <Text Include="sample-input.txt" />
+    <Text Include="sample-input2.txt" />
+    <Text Include="sample-output.txt" />
+    <Text Include="sample-output2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

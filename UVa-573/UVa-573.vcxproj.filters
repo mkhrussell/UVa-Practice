@@ -25,10 +25,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt">
+    <Text Include="output.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="redirect.txt">
+    <Text Include="sample-input.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
