@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=UVa-10935
 ConfigurationName      :=Debug
-WorkspacePath          := "/Users/mkhrussell/Development/UVa-Practice"
-ProjectPath            := "/Users/mkhrussell/Development/UVa-Practice/UVa-10935"
+WorkspacePath          := "/home/kamrul/Development/UVa-Practice"
+ProjectPath            := "/home/kamrul/Development/UVa-Practice/UVa-10935"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Mohammad Kamrul Hasan
-Date                   :=31/01/2016
-CodeLitePath           :="/Users/mkhrussell/Library/Application Support/codelite"
+Date                   :=04/02/16
+CodeLitePath           :="/home/kamrul/.codelite"
 LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
+SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -59,7 +59,7 @@ AS       := /usr/bin/as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
+CodeLiteDir:=/usr/share/codelite
 Objects0=$(IntermediateDirectory)/UVa10935.cpp$(ObjectSuffix) 
 
 
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/UVa10935.cpp$(ObjectSuffix): UVa10935.cpp $(IntermediateDirectory)/UVa10935.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mkhrussell/Development/UVa-Practice/UVa-10935/UVa10935.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa10935.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVa-Practice/UVa-10935/UVa10935.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa10935.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/UVa10935.cpp$(DependSuffix): UVa10935.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UVa10935.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UVa10935.cpp$(DependSuffix) -MM "UVa10935.cpp"
 

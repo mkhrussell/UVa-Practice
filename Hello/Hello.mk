@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=Hello
 ConfigurationName      :=Debug
-WorkspacePath          := "/Users/mkhrussell/Development/UVa-Practice"
-ProjectPath            := "/Users/mkhrussell/Development/UVa-Practice/Hello"
+WorkspacePath          := "/home/kamrul/Development/UVa-Practice"
+ProjectPath            := "/home/kamrul/Development/UVa-Practice/Hello"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Mohammad Kamrul Hasan
-Date                   :=31/01/2016
-CodeLitePath           :="/Users/mkhrussell/Library/Application Support/codelite"
+Date                   :=04/02/16
+CodeLitePath           :="/home/kamrul/.codelite"
 LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
+SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -59,7 +59,7 @@ AS       := /usr/bin/as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
+CodeLiteDir:=/usr/share/codelite
 Objects0=$(IntermediateDirectory)/Hello.cpp$(ObjectSuffix) 
 
 
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/Hello.cpp$(ObjectSuffix): Hello.cpp $(IntermediateDirectory)/Hello.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mkhrussell/Development/UVa-Practice/Hello/Hello.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Hello.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVa-Practice/Hello/Hello.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Hello.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Hello.cpp$(DependSuffix): Hello.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Hello.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Hello.cpp$(DependSuffix) -MM "Hello.cpp"
 

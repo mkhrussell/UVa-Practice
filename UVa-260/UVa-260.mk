@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Mohammad Kamrul Hasan
-Date                   :=29/01/16
+Date                   :=04/02/16
 CodeLitePath           :="/home/kamrul/.codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -97,7 +97,7 @@ $(IntermediateDirectory)/UVa260.cpp$(DependSuffix): UVa260.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UVa260.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UVa260.cpp$(DependSuffix) -MM "UVa260.cpp"
 
 $(IntermediateDirectory)/UVa260.cpp$(PreprocessSuffix): UVa260.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UVa260.cpp$(PreprocessSuffix) "UVa260.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/UVa260.cpp$(PreprocessSuffix) "UVa260.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
