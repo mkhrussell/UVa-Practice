@@ -117,7 +117,8 @@ void dfsVisit(int u)
 				dfsLow[u] = mathMin(dfsLow[u], dfsLow[v]);
 
 			}
-			else if (v != dfsParent[u]) // back edge
+            // dfsVisited[v] == DFS_VISIED or dfsVisited[v] == DFS_EXPLORED: How? Ans: there is a back edge.
+			else if (v != dfsParent[u]) // Back edge is indirect?
 			{
 				dfsLow[u] = mathMin(dfsLow[u], dfsNum[v]);
 			}

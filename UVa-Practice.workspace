@@ -21,8 +21,10 @@
   <Project Name="UVa-11727" Path="UVa-11727/UVa-11727.project" Active="No"/>
   <Project Name="UVa-11831" Path="UVa-11831/UVa-11831.project" Active="No"/>
   <Project Name="DS-Practice" Path="DS-Practice/DS-Practice.project" Active="No"/>
+  <Project Name="UVa-796" Path="UVa-796/UVa-796.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
       <Project Name="UVa-10901" ConfigName="Debug"/>
       <Project Name="UVa-10305" ConfigName="Debug"/>
       <Project Name="Hello" ConfigName="Debug"/>
@@ -44,8 +46,10 @@
       <Project Name="UVa-11727" ConfigName="Debug"/>
       <Project Name="UVa-11831" ConfigName="Debug"/>
       <Project Name="DS-Practice" ConfigName="Debug"/>
+      <Project Name="UVa-796" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
       <Project Name="UVa-10901" ConfigName="Release"/>
       <Project Name="UVa-10305" ConfigName="Release"/>
       <Project Name="Hello" ConfigName="Release"/>
@@ -67,6 +71,7 @@
       <Project Name="UVa-11727" ConfigName="Release"/>
       <Project Name="UVa-11831" ConfigName="Release"/>
       <Project Name="DS-Practice" ConfigName="Release"/>
+      <Project Name="UVa-796" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
