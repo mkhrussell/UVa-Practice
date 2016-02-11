@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <iostream>
 #include <cstdio>
 #include <cstring>
@@ -153,7 +155,7 @@ void dfsMain()
 
 int main(int argc, char **argv)
 {
-	//freopen("sample-input.txt", "r", stdin);
+	freopen("sample-input.txt", "r", stdin);
 	//freopen("output.txt", "w", stdout);
 
 	for (nCase = 1; scanf("%d", &N) && N > 0; nCase++)
