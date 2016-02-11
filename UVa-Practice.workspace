@@ -4,7 +4,7 @@
   <Project Name="UVa-10305" Path="UVa-10305/UVa-10305.project" Active="No"/>
   <Project Name="Hello" Path="Hello/Hello.project" Active="No"/>
   <Project Name="UVa-247" Path="UVa-247/UVa-247.project"/>
-  <Project Name="UVa-315" Path="UVa-315/UVa-315.project" Active="Yes"/>
+  <Project Name="UVa-315" Path="UVa-315/UVa-315.project" Active="No"/>
   <Project Name="UVa-459" Path="UVa-459/UVa-459.project" Active="No"/>
   <Project Name="UVa-573" Path="UVa-573/UVa-573.project" Active="No"/>
   <Project Name="UVa-10004" Path="UVa-10004/UVa-10004.project" Active="No"/>
@@ -21,7 +21,9 @@
   <Project Name="UVa-11727" Path="UVa-11727/UVa-11727.project" Active="No"/>
   <Project Name="UVa-11831" Path="UVa-11831/UVa-11831.project" Active="No"/>
   <Project Name="DS-Practice" Path="DS-Practice/DS-Practice.project" Active="No"/>
-  <Project Name="UVa-796" Path="UVa-796/UVa-796.project"/>
+  <Project Name="UVa-796" Path="UVa-796/UVa-796.project" Active="No"/>
+  <Project Name="Libs" Path="Libs/Libs.project" Active="No"/>
+  <Project Name="MST-Prims" Path="MST-Prims/MST-Prims.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -47,6 +49,8 @@
       <Project Name="UVa-11831" ConfigName="Debug"/>
       <Project Name="DS-Practice" ConfigName="Debug"/>
       <Project Name="UVa-796" ConfigName="Debug"/>
+      <Project Name="Libs" ConfigName="Debug"/>
+      <Project Name="MST-Prims" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -72,6 +76,8 @@
       <Project Name="UVa-11831" ConfigName="Release"/>
       <Project Name="DS-Practice" ConfigName="Release"/>
       <Project Name="UVa-796" ConfigName="Release"/>
+      <Project Name="Libs" ConfigName="Release"/>
+      <Project Name="MST-Prims" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

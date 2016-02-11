@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ UVa-315 - Debug ]----------"
-	@cd "UVa-315" && "$(MAKE)" -f  "UVa-315.mk"
+	@echo "----------Building project:[ UVa-796 - Debug ]----------"
+	@cd "UVa-796" && "$(MAKE)" -f  "UVa-796.mk"
 clean:
-	@echo "----------Cleaning project:[ UVa-315 - Debug ]----------"
-	@cd "UVa-315" && "$(MAKE)" -f  "UVa-315.mk" clean
+	@echo "----------Cleaning project:[ UVa-796 - Debug ]----------"
+	@cd "UVa-796" && "$(MAKE)" -f  "UVa-796.mk" clean
