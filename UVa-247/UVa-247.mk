@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=UVa-247
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/kamrul/Development/UVa-Practice"
-ProjectPath            := "/home/kamrul/Development/UVa-Practice/UVa-247"
+WorkspacePath          := "D:\Programming\UVa-Practice"
+ProjectPath            := "D:\Programming\UVa-Practice\UVa-247"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Mohammad Kamrul Hasan
-Date                   :=12/02/16
-CodeLitePath           :="/home/kamrul/.codelite"
-LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
+User                   :=mkhrussell
+Date                   :=13/02/2016
+CodeLitePath           :="C:\Program Files\CodeLite"
+LinkerName             :=C:/LLVM/bin/clang++.exe
+SharedObjectLinkerName :=C:/LLVM/bin/clang++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -34,9 +34,11 @@ ArchiveOutputSwitch    :=
 PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="UVa-247.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=mkdir -p
+MakeDirCommand         :=makedir
+RcCmpOptions           := 
+RcCompilerName         :=C:/TDM-GCC-64/bin/windres.exe
 LinkOptions            :=  
-IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
+IncludePath            := $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++ $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32 $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include $(IncludeSwitch)C:/TDM-GCC-64/include $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed $(IncludeSwitch)C:/TDM-GCC-64/x86_64-w64-mingw32/include  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
 RcIncludePath          := 
 Libs                   := 
@@ -47,19 +49,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := /usr/bin/ar rcu
-CXX      := /usr/bin/g++
-CC       := /usr/bin/gcc
+AR       := C:/LLVM/bin/llvm-ar.exe rcu
+CXX      := C:/LLVM/bin/clang++.exe
+CC       := C:/LLVM/bin/clang.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := /usr/bin/as
+AS       := C:/LLVM/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
+CodeLiteDir:=C:\Program Files\CodeLite
 Objects0=$(IntermediateDirectory)/UVa247.cpp$(ObjectSuffix) 
 
 
@@ -79,11 +81,11 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@test -d ./Debug || $(MakeDirCommand) ./Debug
+	@$(MakeDirCommand) "./Debug"
 
 
 $(IntermediateDirectory)/.d:
-	@test -d ./Debug || $(MakeDirCommand) ./Debug
+	@$(MakeDirCommand) "./Debug"
 
 PreBuild:
 
@@ -92,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/UVa247.cpp$(ObjectSuffix): UVa247.cpp $(IntermediateDirectory)/UVa247.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/kamrul/Development/UVa-Practice/UVa-247/UVa247.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa247.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Programming/UVa-Practice/UVa-247/UVa247.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/UVa247.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/UVa247.cpp$(DependSuffix): UVa247.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/UVa247.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/UVa247.cpp$(DependSuffix) -MM "UVa247.cpp"
 

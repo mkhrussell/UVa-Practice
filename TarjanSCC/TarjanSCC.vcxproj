@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5825B152-BBCA-4A04-A052-2C95E6E9CB66}</ProjectGuid>
+    <ProjectGuid>{028783AC-CDBE-4877-B40C-4AAC856A9406}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>UVa247</RootNamespace>
+    <RootNamespace>TarjanSCC</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,12 +142,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="UVa247.cpp" />
+    <ClCompile Include="TarjanSCC.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="input.txt" />
     <Text Include="output.txt" />
-    <Text Include="sample-input.txt" />
-    <Text Include="sample-output.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
