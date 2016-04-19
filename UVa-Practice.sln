@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hello", "Hello\Hello.vcxproj", "{C0AF75D3-F9ED-451B-BEB0-9B0CF8431A93}"
 EndProject
@@ -58,6 +58,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuickSortImpl", "QuickSortImpl\QuickSortImpl.vcxproj", "{C5AAC0AB-895A-4433-85E1-71D70170E939}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UVa-10130", "UVa-10130\UVa-10130.vcxproj", "{5FC8EBF8-90EA-4DD0-9DA6-92E1123D492C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UVa-00990", "UVa-00990\UVa-00990.vcxproj", "{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -291,6 +293,14 @@ Global
 		{5FC8EBF8-90EA-4DD0-9DA6-92E1123D492C}.Release|x64.Build.0 = Release|x64
 		{5FC8EBF8-90EA-4DD0-9DA6-92E1123D492C}.Release|x86.ActiveCfg = Release|Win32
 		{5FC8EBF8-90EA-4DD0-9DA6-92E1123D492C}.Release|x86.Build.0 = Release|Win32
+		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Debug|x64.ActiveCfg = Debug|x64
+		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Debug|x64.Build.0 = Debug|x64
+		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Debug|x86.ActiveCfg = Debug|Win32
+		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Debug|x86.Build.0 = Debug|Win32
+		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Release|x64.ActiveCfg = Release|x64
+		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Release|x64.Build.0 = Release|x64
+		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Release|x86.ActiveCfg = Release|Win32
+		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
