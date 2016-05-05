@@ -61,6 +61,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UVa-10130", "UVa-10130\UVa-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UVa-00990", "UVa-00990\UVa-00990.vcxproj", "{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UVa-00124", "UVa-00124\UVa-00124.vcxproj", "{CCD18BA3-1D18-48E5-BFE7-7C5478E0EBCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -301,6 +303,14 @@ Global
 		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Release|x64.Build.0 = Release|x64
 		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Release|x86.ActiveCfg = Release|Win32
 		{CA54C780-3672-45A0-BCD8-BFC8EEB18C17}.Release|x86.Build.0 = Release|Win32
+		{CCD18BA3-1D18-48E5-BFE7-7C5478E0EBCD}.Debug|x64.ActiveCfg = Debug|x64
+		{CCD18BA3-1D18-48E5-BFE7-7C5478E0EBCD}.Debug|x64.Build.0 = Debug|x64
+		{CCD18BA3-1D18-48E5-BFE7-7C5478E0EBCD}.Debug|x86.ActiveCfg = Debug|Win32
+		{CCD18BA3-1D18-48E5-BFE7-7C5478E0EBCD}.Debug|x86.Build.0 = Debug|Win32
+		{CCD18BA3-1D18-48E5-BFE7-7C5478E0EBCD}.Release|x64.ActiveCfg = Release|x64
+		{CCD18BA3-1D18-48E5-BFE7-7C5478E0EBCD}.Release|x64.Build.0 = Release|x64
+		{CCD18BA3-1D18-48E5-BFE7-7C5478E0EBCD}.Release|x86.ActiveCfg = Release|Win32
+		{CCD18BA3-1D18-48E5-BFE7-7C5478E0EBCD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
