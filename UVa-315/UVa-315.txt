@@ -1,1 +1,0 @@
-./Debug/UVa315.cpp.o

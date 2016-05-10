@@ -98,4 +98,6 @@
     <File Name="sample-input.txt"/>
     <File Name="sample-output.txt"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

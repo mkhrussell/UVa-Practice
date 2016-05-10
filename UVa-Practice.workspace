@@ -1,85 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="UVa-Practice" Database="">
-  <Project Name="UVa-10901" Path="UVa-10901/UVa-10901.project" Active="No"/>
   <Project Name="UVa-10305" Path="UVa-10305/UVa-10305.project" Active="No"/>
-  <Project Name="Hello" Path="Hello/Hello.project" Active="No"/>
-  <Project Name="UVa-247" Path="UVa-247/UVa-247.project"/>
-  <Project Name="UVa-315" Path="UVa-315/UVa-315.project" Active="No"/>
-  <Project Name="UVa-459" Path="UVa-459/UVa-459.project" Active="No"/>
-  <Project Name="UVa-573" Path="UVa-573/UVa-573.project" Active="No"/>
   <Project Name="UVa-10004" Path="UVa-10004/UVa-10004.project" Active="No"/>
   <Project Name="UVa-11902" Path="UVa-11902/UVa-11902.project" Active="No"/>
   <Project Name="UVa-11953" Path="UVa-11953/UVa-11953.project" Active="No"/>
-  <Project Name="UVa-100" Path="UVa-100/UVa-100.project" Active="No"/>
-  <Project Name="UVa-260" Path="UVa-260/Uva-260.project" Active="No"/>
-  <Project Name="UVa-336" Path="UVa-336/Uva-336.project" Active="No"/>
-  <Project Name="UVa-352" Path="UVa-352/Uva-352.project" Active="No"/>
   <Project Name="UVa-10935" Path="UVa-10935/UVa-10935.project" Active="No"/>
   <Project Name="UVa-11034" Path="UVa-11034/UVa-11034.project" Active="No"/>
   <Project Name="UVa-11172" Path="UVa-11172/UVa-11172.project" Active="No"/>
   <Project Name="UVa-11498" Path="UVa-11498/UVa-11498.project" Active="No"/>
   <Project Name="UVa-11727" Path="UVa-11727/UVa-11727.project" Active="No"/>
   <Project Name="UVa-11831" Path="UVa-11831/UVa-11831.project" Active="No"/>
-  <Project Name="DS-Practice" Path="DS-Practice/DS-Practice.project" Active="No"/>
-  <Project Name="UVa-796" Path="UVa-796/UVa-796.project" Active="No"/>
-  <Project Name="Libs" Path="Libs/Libs.project" Active="No"/>
-  <Project Name="MST-Prims" Path="MST-Prims/MST-Prims.project" Active="No"/>
-  <Project Name="UVa-11631" Path="UVa-11631/UVa-11631.project" Active="Yes"/>
+  <Project Name="UVa-00100" Path="UVa-00100/UVa-00100.project" Active="Yes"/>
+  <Project Name="UVa-00124" Path="UVa-00124/UVa-00124.project" Active="No"/>
+  <Project Name="UVa-00247" Path="UVa-00247/UVa-00247.project" Active="No"/>
+  <Project Name="UVa-00260" Path="UVa-00260/UVa-00260.project" Active="No"/>
+  <Project Name="UVa-00315" Path="UVa-00315/UVa-00315.project" Active="No"/>
+  <Project Name="UVa-00352" Path="UVa-00352/UVa-00352.project" Active="No"/>
+  <Project Name="UVa-00459" Path="UVa-00459/UVa-00459.project" Active="No"/>
+  <Project Name="UVa-00562" Path="UVa-00562/UVa-00562.project" Active="No"/>
+  <Project Name="UVa-00573" Path="UVa-00573/UVa-00573.project" Active="No"/>
+  <Project Name="UVa-00796" Path="UVa-00796/UVa-00796.project" Active="No"/>
+  <Project Name="UVa-00990" Path="UVa-00990/UVa-00990.project" Active="No"/>
+  <Project Name="UVa-10130" Path="UVa-10130/UVa-10130.project" Active="No"/>
+  <Project Name="UVa-11631" Path="UVa-11631/UVa-11631.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
-      <Project Name="UVa-10901" ConfigName="Debug"/>
       <Project Name="UVa-10305" ConfigName="Debug"/>
-      <Project Name="Hello" ConfigName="Debug"/>
-      <Project Name="UVa-247" ConfigName="Debug"/>
-      <Project Name="UVa-315" ConfigName="Debug"/>
-      <Project Name="UVa-459" ConfigName="Debug"/>
-      <Project Name="UVa-573" ConfigName="Debug"/>
       <Project Name="UVa-10004" ConfigName="Debug"/>
       <Project Name="UVa-11902" ConfigName="Debug"/>
       <Project Name="UVa-11953" ConfigName="Debug"/>
-      <Project Name="UVa-100" ConfigName="Debug"/>
-      <Project Name="UVa-260" ConfigName="Debug"/>
-      <Project Name="UVa-336" ConfigName="Debug"/>
-      <Project Name="UVa-352" ConfigName="Debug"/>
       <Project Name="UVa-10935" ConfigName="Debug"/>
       <Project Name="UVa-11034" ConfigName="Debug"/>
       <Project Name="UVa-11172" ConfigName="Debug"/>
       <Project Name="UVa-11498" ConfigName="Debug"/>
       <Project Name="UVa-11727" ConfigName="Debug"/>
       <Project Name="UVa-11831" ConfigName="Debug"/>
-      <Project Name="DS-Practice" ConfigName="Debug"/>
-      <Project Name="UVa-796" ConfigName="Debug"/>
-      <Project Name="Libs" ConfigName="Debug"/>
-      <Project Name="MST-Prims" ConfigName="Debug"/>
+      <Project Name="UVa-00100" ConfigName="Debug"/>
+      <Project Name="UVa-00124" ConfigName="Debug"/>
+      <Project Name="UVa-00247" ConfigName="Debug"/>
+      <Project Name="UVa-00260" ConfigName="Debug"/>
+      <Project Name="UVa-00315" ConfigName="Debug"/>
+      <Project Name="UVa-00352" ConfigName="Debug"/>
+      <Project Name="UVa-00459" ConfigName="Debug"/>
+      <Project Name="UVa-00562" ConfigName="Debug"/>
+      <Project Name="UVa-00573" ConfigName="Debug"/>
+      <Project Name="UVa-00796" ConfigName="Debug"/>
+      <Project Name="UVa-00990" ConfigName="Debug"/>
+      <Project Name="UVa-10130" ConfigName="Debug"/>
       <Project Name="UVa-11631" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
-      <Project Name="UVa-10901" ConfigName="Release"/>
       <Project Name="UVa-10305" ConfigName="Release"/>
-      <Project Name="Hello" ConfigName="Release"/>
-      <Project Name="UVa-247" ConfigName="Release"/>
-      <Project Name="UVa-315" ConfigName="Release"/>
-      <Project Name="UVa-459" ConfigName="Release"/>
-      <Project Name="UVa-573" ConfigName="Release"/>
       <Project Name="UVa-10004" ConfigName="Release"/>
       <Project Name="UVa-11902" ConfigName="Release"/>
       <Project Name="UVa-11953" ConfigName="Release"/>
-      <Project Name="UVa-100" ConfigName="Release"/>
-      <Project Name="UVa-260" ConfigName="Release"/>
-      <Project Name="UVa-336" ConfigName="Release"/>
-      <Project Name="UVa-352" ConfigName="Release"/>
       <Project Name="UVa-10935" ConfigName="Release"/>
       <Project Name="UVa-11034" ConfigName="Release"/>
       <Project Name="UVa-11172" ConfigName="Release"/>
       <Project Name="UVa-11498" ConfigName="Release"/>
       <Project Name="UVa-11727" ConfigName="Release"/>
       <Project Name="UVa-11831" ConfigName="Release"/>
-      <Project Name="DS-Practice" ConfigName="Release"/>
-      <Project Name="UVa-796" ConfigName="Release"/>
-      <Project Name="Libs" ConfigName="Release"/>
-      <Project Name="MST-Prims" ConfigName="Release"/>
+      <Project Name="UVa-00100" ConfigName="Release"/>
+      <Project Name="UVa-00124" ConfigName="Release"/>
+      <Project Name="UVa-00247" ConfigName="Release"/>
+      <Project Name="UVa-00260" ConfigName="Release"/>
+      <Project Name="UVa-00315" ConfigName="Release"/>
+      <Project Name="UVa-00352" ConfigName="Release"/>
+      <Project Name="UVa-00459" ConfigName="Release"/>
+      <Project Name="UVa-00562" ConfigName="Release"/>
+      <Project Name="UVa-00573" ConfigName="Release"/>
+      <Project Name="UVa-00796" ConfigName="Release"/>
+      <Project Name="UVa-00990" ConfigName="Release"/>
+      <Project Name="UVa-10130" ConfigName="Release"/>
       <Project Name="UVa-11631" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
