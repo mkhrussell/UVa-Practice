@@ -45,3 +45,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Ignore debug files
+Debug/
+x64/
+
+# Ignore log files
+*.log
+
+# Ignore project tmp files
+.codelite/
+.vs/
+.clang/
