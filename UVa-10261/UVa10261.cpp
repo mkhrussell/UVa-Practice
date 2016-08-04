@@ -10,95 +10,96 @@ int T;
 int nCase;
 
 int N;
-int ferryLen;
+int oneSideSize;
+int bothSideSize;
 
 int inputQueue[100];
+int finalTaken[100];
 
 int tmpSet[100];
 int tmpTaken[100];
+int tmpSum = 0;
 
 int minDiff = 500000;
-int tmpSetOne[100];
-int tmpSetTwo[100];
 
 int myAbs(int a)
 {
 	return a >= 0 ? a : -a;
 }
 
-void backtrack(int tmpSet[], int level, int N, int remainder)
+void backtrack(int level, int N, int remainder)
 {
-	if (level == N || remainder <= 0)
+	if (level == N)
 	{
 		int setOneSum = 0, setTwoSum = 0;
+		
 		for (int i = 0; i < N; i++)
 		{
 			if (tmpTaken[i] == 1)
 			{
-				setOneSum += tmpSet[i];				
-			}
-			else
-			{
-				setTwoSum += tmpSet[i];				
+				setOneSum += tmpSet[i];
 			}
 		}
 
-		int diff = myAbs(setOneSum - setTwoSum);
+		setTwoSum = tmpSum - setOneSum;		
+		int diff = myAbs(setTwoSum - setOneSum);
+
 		if (diff < minDiff)
 		{
 			minDiff = diff;
-			int i = 0;
-			int m = 0, n = 0;
-			for (; i < N; i++)
+			for (int i = 0; i < N; i++)
 			{
-				if (tmpTaken[i] == 1)
-				{
-					tmpSetOne[m++] = tmpSet[i];
-				}
+				if (tmpTaken[i] == tmpTaken[0])
+					finalTaken[i] = 1;
 				else
-				{
-					tmpSetTwo[n++] = tmpSet[i];
-				}
+					finalTaken[i] = 0;
 			}
+		}
 
-			for (; m < N; m++)
-				tmpSetOne[m++] = 0;
-
-			for (; n < N; n++)
-				tmpSetTwo[n++] = 0;
-		}		
-
+		// Reset
 		for (int i = 0; i < N; i++)
 			tmpTaken[i] = 0;
 	}
 	else
 	{
-		tmpTaken[level] = 1;
-		backtrack(tmpSet, level + 1, N, remainder - tmpSet[level]);
-		
+		if (remainder - tmpSet[level] >= 0)
+		{
+			tmpTaken[level] = 1;
+			backtrack(level + 1, N, remainder - tmpSet[level]);
+		}
+
 		tmpTaken[level] = 0;
-		backtrack(tmpSet, level + 1, N, remainder);
-	}	
+		backtrack(level + 1, N, remainder);
+	}
 }
 
-void makeTwoSet(int tmpSet[], int setSize, int setSum)
+void makeTwoSet(int setSize, int setSum)
 {
-	backtrack(tmpSet, 0, setSize, setSum);
+	backtrack(0, setSize, setSum);
+}
+
+void reset()
+{
+	tmpSum = 0;
 }
 
 int main(int argc, char **argv)
 {
-	freopen("sample-input.txt", "r", stdin);
-	//freopen("output.txt", "w", stdout);
+	freopen("critical_input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
 	
 	scanf("%d", &T);
 
 	nCase = 1;
 	while (nCase <= T)
 	{
-		scanf("%d", &ferryLen);
-		ferryLen = ferryLen * 100;
-		
+		if (nCase)
+			printf("\n");
+
+		scanf("%d", &oneSideSize);
+		oneSideSize = oneSideSize * 100;
+		bothSideSize = oneSideSize * 2;
+
 		int carLen;
 		while (scanf("%d", &carLen) && carLen > 0)
 		{
@@ -106,28 +107,35 @@ int main(int argc, char **argv)
 			N++;
 		}
 
-		int tmpRem = ferryLen * 2; // Ferry capacity
+		int tmpRem = bothSideSize; // Ferry capacity
+		tmpSum = 0;
 		int tmpN = 0;
-		for (int i = 0; tmpRem >= inputQueue[i]; i++, tmpN++)
+		for (int i = 0; tmpRem >= inputQueue[i] ; i++, tmpN++)
 		{
 			tmpSet[i] = inputQueue[i];
 			tmpRem = tmpRem - inputQueue[i];
+			tmpSum += inputQueue[i];
 		}
-		
-		makeTwoSet(tmpSet, tmpN, ferryLen); // Create two equal set
 
-		printf("Set 1:\n");
-		for (int m = 0; m < N; m++)
-			printf("%d ", tmpSetOne[m]);
-
-		printf("\n");
-
-		printf("Set 2:\n");
-		for (int n = 0; n < N; n++)
-			printf("%d ", tmpSetTwo[n]);
+		makeTwoSet(tmpN, oneSideSize); // Create two equal set
 		
-		printf("\n");
-		
+		printf("%d\n", tmpN);
+		int set1 = 0, set2 = 0;
+		for (int n = 0; n < tmpN; n++)
+		{
+			if (finalTaken[n] == 1)
+			{
+				printf("port");
+				//set1 += inputQueue[n];
+			}
+			else
+			{
+				printf("starboard");
+				//set2 += inputQueue[n];
+			}
+			printf("\n");
+		}
+
 		nCase++;
 	}
 

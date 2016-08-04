@@ -21,6 +21,9 @@
     <ClCompile Include="find_powerset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="equal_sum_subset_01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="sample-input.txt" />
